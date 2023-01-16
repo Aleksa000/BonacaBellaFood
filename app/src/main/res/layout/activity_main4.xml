@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/fragmentMeni"
+        android:name="com.example.bonacabellafood.MeniFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        tools:layout="@layout/list_fragment" />
+
+    <fragment
+        android:id="@+id/fragmentDetalji"
+        android:name="com.example.bonacabellafood.DetaljiFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        tools:layout="@layout/fragment_detalji" />
+</LinearLayout>
